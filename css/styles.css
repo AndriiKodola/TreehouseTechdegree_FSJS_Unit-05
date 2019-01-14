@@ -1,4 +1,4 @@
-/* ===================================== 
+/* =====================================
    Public API Request
 ======================================== */
 
@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: rgba(160, 200, 246, 0.9);
 }
 
 header {
@@ -37,7 +37,7 @@ header h1 {
 .search-input {
     padding: 0.4rem 1rem;
     border: 1px solid rgba(200, 200, 200, 0.9);
-    border-radius: 0.25rem 0 0 0.25rem ;
+    border-radius: 1rem;
     max-width: 20rem;
     transition: .4s ease-out;
     outline: none;
@@ -48,6 +48,7 @@ header h1 {
 }
 
 .search-submit {
+		display: none;
     cursor: pointer;
     height: 33px;
     background: rgba(245, 245, 245, 0.9);
@@ -63,7 +64,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Gallery
 ======================================== */
 
@@ -76,7 +77,7 @@ header h1 {
     max-width: 1200px;
     margin: auto;
 }
-  
+
 .card {
     display: flex;
     flex-direction: row;
@@ -88,20 +89,23 @@ header h1 {
     margin: 10px 10px 20px;
     padding: 10px;
     background: rgba(245, 245, 245, 0.9);
-    border-radius: 0.25em;
+    border-radius: 40px;
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
     overflow: hidden;
+		box-shadow:  .5px .5px #000000;
 }
 
 .card-img {
     width: 95px;
     margin: 10px 15px auto 10px;
-    border-radius: 50%;
+    border-radius: 20px 5px 5px 20px;
 }
 
 .card-info-container {
     text-align: left;
+		padding-left: 10px;
+		border-left: .5px solid #838383;
 }
 
 .card-name {
@@ -120,7 +124,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Modal
 ======================================== */
 
@@ -206,13 +210,13 @@ header h1 {
     transition: .4s ease-out;
     outline: none;
   }
-  
 
-/* ===================================== 
+
+/* =====================================
    Media Queries
 ======================================== */
 
-/* ===================================== 
+/* =====================================
    Tablet
 ======================================== */
 
@@ -240,9 +244,9 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Desktop
-   Hover styles on desktop 
+   Hover styles on desktop
 ======================================== */
 
 @media (min-width: 1024px) {
@@ -253,11 +257,11 @@ header h1 {
     }
 
     .card:hover .card-text {
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 }
